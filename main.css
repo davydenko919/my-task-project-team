@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'InterTight-Medium';
+    src: url('../fonts/InterTight-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'InterTight-SemiBold';
+    src: url('../fonts/InterTight-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  :root {
+    font-family: InterTight-Medium, InterTight-SemiBold, sans-serif;
+    font-weight: 500;
+  
+    --main-red: #ED3B44;
+    --main-white: #FAFAFA;
+    --backround-black: #1C1D20;
+    --cards-black:  #242527;
+    --arrow-gray: #3B3B3B;
+  
+    color: var(--main-white);
+    background-color: var(--backround-black);
+  
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .container {
+    padding: 0 16px;
+    min-width: 320px;
+    max-width: 375px;
+  }
+  
+  @media screen and (min-width: 375px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 0 32px;
+      width: 768px;
+      min-width: none;
+      max-width: none;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .container {
+      width: 1440px;
+    }
+  }
